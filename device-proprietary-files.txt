@@ -1,0 +1,5 @@
+# device specific proprietary file list
+
+# Touch frimware
+etc/firmware/atmxt-r1.tdat
+etc/firmware/atmxt-r2.tdat
