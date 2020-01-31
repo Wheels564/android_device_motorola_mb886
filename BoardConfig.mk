@@ -21,7 +21,7 @@
 # definition file).
 #
 
--include device/motorola/msm8960-common/BoardConfigCommon.mk
+-include device/motorola/msm8960_jbbl-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
 -include vendor/motorola/mb886/BoardConfigVendor.mk
@@ -33,6 +33,9 @@ TARGET_OTA_ASSERT_DEVICE := mb886,qinara
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+
+# Recovery
+TARGET_RECOVERY_DEVICE_DIRS := device/motorola/mb886
 
 # Storage
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1560281088
