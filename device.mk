@@ -33,10 +33,21 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# NFC
+PRODUCT_PACKAGES += \
+    nfc.msm8960
+
 # Media config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
-
+    
+# Recovery/IDC
+PRODUCT_COPY_FILES += \
+    device/motorola/qcom-common/idc/atmxt-i2c.idc:system/usr/idc/atmxt-i2c.idc \
+    device/motorola/qcom-common/idc/evfwd.idc:system/usr/idc/evfwd.idc \
+    device/motorola/qcom-common/idc/atmxt-i2c.idc:recovery/root/vendor/firmware/atmxt-i2c.idc \
+    vendor/motorola/xt907_jbbl/proprietary/etc/firmware/atmxt-r2.tdat:recovery/root/vendor/firmware/atmxt-r2.tdat
+ 
 # QCOM Display
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=326
@@ -46,8 +57,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9 \
     telephony.lteOnCdmaDevice=0 \
     telephony.lteOnGsmDevice=1
-
-$(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
+    
 $(call inherit-product, device/motorola/qcom-common/keychars/keychars.mk)
 $(call inherit-product, device/motorola/qcom-common/keylayout/keylayout.mk)
+$(call inherit-product, device/motorola/qcom-common/modules/nfc/nfc.mk)
 $(call inherit-product, vendor/motorola/mb886/mb886-vendor.mk)
