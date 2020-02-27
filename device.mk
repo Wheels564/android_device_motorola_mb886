@@ -33,10 +33,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
-# NFC
-PRODUCT_PACKAGES += \
-    nfc.msm8960
-
 # Media config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/media_profiles.xml:system/etc/media_profiles.xml
