@@ -6,7 +6,3 @@ lib/libaudcal.so
 # Touch frimware
 etc/firmware/atmxt-r1.tdat
 etc/firmware/atmxt-r2.tdat
-
-# Qcomm
-lib/libqmiservices.so
-lib/libril-qc-qmi-1.so
