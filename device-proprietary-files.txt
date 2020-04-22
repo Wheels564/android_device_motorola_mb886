@@ -4,5 +4,5 @@
 lib/libaudcal.so
 
 # Touch frimware
-etc/firmware/atmxt-r1.tdat
+etc/firmware/atmxt-i2c.idc
 etc/firmware/atmxt-r2.tdat
