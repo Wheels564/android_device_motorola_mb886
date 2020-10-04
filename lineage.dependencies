@@ -1,6 +1,8 @@
 [
   {
+    "remote": "github",
     "repository": "android_device_motorola_msm8960_jbbl-common",
-    "target_path": "device/motorola/msm8960_jbbl-common"
+    "target_path": "device/motorola/msm8960_jbbl-common",
+    "branch": "cm-14.1"
   }
 ]

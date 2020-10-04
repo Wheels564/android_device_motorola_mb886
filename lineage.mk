@@ -1,7 +1,7 @@
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-cm
+DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-lineage
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -12,8 +12,11 @@ TARGET_SCREEN_WIDTH := 720
 TARGET_SCREEN_HEIGHT := 1280
 
 PRODUCT_NAME := lineage_mb886
-TARGET_VENDOR_PRODUCT_NAME := MB886_att
-TARGET_VENDOR_DEVICE_NAME := qinara
+PRODUCT_RELEASE_NAME := ATRIX HD
+PRODUCT_DEVICE := mb886
+PRODUCT_BRAND := motorola
+PRODUCT_MANUFACTURER := motorola
+PRODUCT_MODEL := ATRIX HD
 
 $(call inherit-product, device/motorola/mb886/full_mb886.mk)
 
