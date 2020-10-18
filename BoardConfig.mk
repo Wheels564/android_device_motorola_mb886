@@ -24,7 +24,7 @@
 -include device/motorola/msm8960_jbbl-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/motorola/mb886/BoardConfigVendor.mk
+include vendor/motorola/mb886/BoardConfigVendor.mk
 
 
 BOARD_VENDOR := motorola-qcom
