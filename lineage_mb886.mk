@@ -1,6 +1,8 @@
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+$(call inherit-product, device/motorola/mb886/full_mb886.mk)
+
 DEVICE_PACKAGE_OVERLAYS += device/motorola/qcom-common/overlay-lineage
 
 # Media
