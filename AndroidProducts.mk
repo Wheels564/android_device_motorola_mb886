@@ -13,9 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
   
-    PRODUCT_MAKEFILES := \
+PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_mb886.mk
-
+  
 COMMON_LUNCH_CHOICES := \
     lineage_mb886-userdebug
 
