@@ -32,10 +32,6 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
-
-# NFC
-PRODUCT_PACKAGES += \
-    nfc.msm8960
     
 # Audio configuration
 PRODUCT_COPY_FILES += \
